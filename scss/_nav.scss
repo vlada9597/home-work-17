@@ -1,0 +1,104 @@
+// .nav{
+//     &_trigger{
+//         display: block;
+//         position: relative;
+//         width: 40px;
+
+//         &_toggler-inputnput{
+//             display: none;
+//         }
+
+//         &:checked{
+//         & ~ .nav{
+//         &__list{
+//             translate: 0;
+//         }
+//         &_trigger{
+//             span{
+//                 translate: -50% -50%;
+//                 rotate: 45deg;
+//                 top:50%;
+//                 left: 50%;
+
+//                 &:nth-child(1){
+//                     rotate: -225deg;
+//                 }
+//             }
+//         }
+//       }
+//       }
+//     }
+
+//     &__list{
+//      width: 100vw;
+//      height: 100vh;
+//      position: absolute;
+//      left:0;
+//      top:0;
+//      translate: -200vw 0;
+//      transition: traslate 0.5s;
+//      flex-direction: column;
+//      display: flex;
+//      align-items: flex-start;
+//      justify-content: flex-start;
+//      flex-direction: column;
+//      gap: 32px;
+//      list-style: none;
+//     }
+
+//     &__link{
+//         font-family: var(--font-family);
+//         font-weight: 500;
+//         font-size: 20px;
+//         color: var(--black);
+//         text-decoration: none;
+//         display: block;
+//         position: relative;
+
+
+//         &::before{
+//             content: "";
+//             width: 100%;
+//             height: 1px;
+//             background: currentColor;
+//             scale: 0 1;
+//             will-change: scale;
+//             position: absolute;
+//             left: 0;
+//             top: calc(100% + 1px);
+//             transition: scale .3s;
+//         }
+
+//         &:hover,  &:focus{
+//             &::before{
+//                 scale: 1 1;
+//             }
+//         }
+//     }
+// }
+
+// span{
+//     display: block;
+//     position: absolute;
+//     width: 30px;
+//     height: 2px;
+//     background: var(--black);
+//     border-radius: 10px;
+//     translate: -50% 0;
+//     transition: rotate 0.3s;
+    
+//     &:nth-child(1){
+//         left: 50%;
+//         top:10px;
+//     }
+
+//     &:nth-child(2){
+//         left: 50%;
+//         top:20px;
+//     }
+
+//     &:nth-child(3){
+//         left: 50%;
+//         top:30px;
+//     }
+// }

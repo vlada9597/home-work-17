@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Фінальний проєкт верстки</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="background-container">
+     <header class="container header background-container">
+        <a href="#" class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </a>
+
+        <!-- <style>
+         .menu-bg {
+         background: linear-gradient(to bottom right, #fff, #f2f5f7);
+         padding: 150px;
+         min-height: 100vh;
+         }
+         .lang-block { display: none; }
+         .lang-ukr.active,
+         .lang-eng.active,
+         .lang-esp.active { display: block; }
+         .lang-select {
+          background: none;
+          border: none;
+          font-weight: bold;
+          }
+       </style>
+
+        <nav class="navbar navbar-light bg-light px-3">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+        </nav>
+
+       <div class="collapse menu-bg" id="mainMenu">
+         <div class="d-flex justify-content-between align-items-center">
+           <select class="form-select w-auto" id="langSwitcher">
+             <option value="ukr">UKR</option>
+             <option value="eng">ENG</option>
+             <option value="esp">ESP</option>
+           </select>
+           <button class="btn" data-bs-toggle="collapse" data-bs-target="#mainMenu">&times;</button>
+         </div>
+
+         <div class="lang-block lang-ukr active">
+           <ul class="nav flex-column mt-3">
+             <li class="nav-item"><a class="nav-link" href="#">Гуманітарний центр</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Український центр у Барселоні</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Бібліотека</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Школа та садочок</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Український сад</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Наші партнери</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Звіти</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Новини</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+           </ul>
+         </div>
+
+         <div class="lang-block lang-eng">
+           <ul class="nav flex-column mt-3">
+             <li class="nav-item"><a class="nav-link" href="#">Humanitarian Center</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Ukrainian Center in Barcelona</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">School and Kindergarten</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Ukrainian Garden</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Our Partners</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Reports</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+           </ul>
+         </div>
+
+         <div class="lang-block lang-esp">
+           <ul class="nav flex-column mt-3">
+             <li class="nav-item"><a class="nav-link" href="#">Centro Humanitario</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Centro Ucraniano en Barcelona</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Biblioteca</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Escuela y Jardín</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Jardín Ucraniano</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Nuestros Socios</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Informes</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+             <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+           </ul>
+         </div>
+
+         <div class="mt-4 d-flex gap-3">
+           <a href="#"><img src="icon-fb.svg" alt="Facebook"></a>
+           <a href="#"><img src="icon-insta.svg" alt="Instagram"></a>
+           <a href="#"><img src="icon-telegram.svg" alt="Telegram"></a>
+           <a href="#"><img src="icon-youtube.svg" alt="YouTube"></a>
+         </div>
+         <div class="mt-3">
+            <p class="mb-0">📞 +34 641 35 22 51</p>
+            <p class="mb-0">📍 Carrer de Béjar, 38, Barcelona</p>
+         </div>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+       <script>
+         document.getElementById('langSwitcher').addEventListener('change', function () {
+         document.querySelectorAll('.lang-block').forEach(el => el.classList.remove('active'));
+         document.querySelector('.lang-' + this.value).classList.add('active');
+         });
+       </script> -->
+     </header> 
+    
+
+     <main >
+        <section class="offer container  background-container"> 
+            <h1 class="offer-title">Українська Асоціація «Джерело»</h1>
+            <p class="offer-dscr">
+                Розвиток та підтримка української діаспори в Каталонії, Іспанії з 2012 року 
+            </p>
+            <div class="button-offer-container">
+              <button class="button-offer-blue">Зв’язатись</button>
+              <button class="button-offer-yellow">Підтримати</button>
+           </div>
+        </section>
+       
+
+        <section></section>
+    </div>
+        <section class="about container">
+          <h2 class="about-title"> Хто ми та що робимо</h2>
+          <div class="grid-about-container">
+          <div class="about-dscr-container">
+           <div class="about-dcsr">
+              <p class="blue-about-dscr">Наша мета:</p>
+              <p>сформувати позитивний імідж України як сучасної та привабливої європейської країни.</p>
+           </div>
+           
+           <div class="about-dcsr">
+             <p class="blue-about-dscr">Наша місія:</p> 
+             <p>розвиток української діаспори в Іспанії задля зміцнення міжнародних зв'язків України та Іспанії.</p>
+           </div>
+          </div>
+
+          <div class="about-dscr-2">
+           <p class="about-dscr-small-text">
+             Ольга Дзюбан заснувала Асоціацію «Джерело» у 2012 році задля допомоги українцям.
+           </p>
+
+           <p class="about-dscr-small-text">
+             Українці, які опиняються в Іспанії та хочуть залишитись у цій країні, інтегруватись, мають великі потреби у юридичних консультаціях, психологічній підтримці, спілкуванні, теплій дружній атмосфері. Все це дає землякам «Джерело».
+           </p>
+
+           <p class="about-dscr-small-text">
+             Друга по значенню ціль — показати культуру України, ділитись традиціями, створювати освітні та культурні проєкти, які роблять життя людей насиченим, цікавим та щасливим.
+           </p>
+          </div>
+        </div>
+        </div>
+        </section>
+
+        <section class="goals container">
+          <div class="goals-container-for-desktop">
+            <div class="background-goals">
+                <h2 class="goals-title">Основними цілями діяльності Асоціації є:</h2>
+                <ul class="goals-list">
+                    <li class="goals-item">
+                        Розвиток українських освітніх, культурних, соціальних та екологічних проєктів
+                    </li>
+                    <li class="goals-item">
+                        Організація заходів, спрямованих на обмін та взаємозбагачення українців з представниками інших культур
+                    </li>
+                    <li class="goals-item">
+                        Збереження українських культурних традицій
+                    </li>
+                    <li class="goals-item">
+                        Соціальна адаптація українців в Іспанії
+                    </li>
+                    <li class="goals-item">
+                        Промоція українських виробників та представників креативних індустрій
+                    </li>
+                    <li class="goals-item">
+                        Розвиток інституту волонтерства в Каталонії
+                    </li>
+                    <li class="goals-item">
+                        Збір гуманітарної допомоги для України та допомога українським біженцям. (з початку війни в Україні робота у цьому напрямку стала інтенсивнішою)
+                    </li>
+                </ul>
+            </div>
+            <div class="container-for-img">
+              <img src="img/image-goals-1.jpg" alt="image-goals-1" class="goals-img">
+              <img src="img/image-goals-2.jpg" alt="image-goals-2" class="goals-img">
+            </div>
+            <img src="img/image-goals-3.jpg" alt="image-goals-3" class="goals-img">
+          </div>
+        </section>
+
+        <section class="support container">
+            <h2 class="support-title">Асоціація «Джерело» у цифрах</h2>
+            <div class="support-container-dscr">
+               <p class="support-dscr">
+                 Станом на 01.09.2022 Гуманітарним Центром Асоціації надано допомогу понад 1 тисячі українських сімей, які тимчасово переміщені в Іспанію внаслідок війни в Україні. Також Центром видано 1593 продуктових наборів. Асоціацією організовані курси іспанської мови, які регулярно відвідує 70 українських біженців. З жовтня заплановано відкриття курсів з вивчення іспанської мови для абітурієнтів, що вступатимуть до іспанських вишів. 
+               </p>
+               <p class="support-dscr-main">
+                  Щодня послугами Гуманітарного центру Асоціації користуються всередньому 50 сімей
+               </p>
+            </div>
+
+            <div class="support-projects background-gradient-yellow">
+                <article class="projects-item">
+                    <p class="projects-number">10 років</p>
+                    <h3 class="projects-dscr">активної роботи в Іспанії</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">70+</p>
+                    <h3 class="projects-dscr">культурних подій</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">понад 150 тонн</p>
+                    <h3 class="projects-dscr">зібраної гуманітарної допомоги для України</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">40 000€</p>
+                    <h3 class="projects-dscr">перераховано для допомоги Україні (ЗСУ, цивільне населення)</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">понад 100</p>
+                    <h3 class="projects-dscr">волонтерів залучили до допомоги</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">3 освітніх проєкти</p>
+                    <h3 class="projects-dscr">заснували у Барселоні</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">понад 2500</p>
+                    <h3 class="projects-dscr">продуктових наборів</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number" >майже 100</p>
+                    <h3 class="projects-dscr">людей відвідує курси</h3>
+                </article>
+
+                <article class="projects-item">
+                    <p class="projects-number">25 осіб</p>
+                    <h3 class="projects-dscr">навчаються на курсах для абітурієнтів</h3>
+                </article>
+          </div>
+
+           <div>
+            <div class="video-and-after-container">
+              <div class="video">
+                  <video src="#" class="video-player" poster="img/video-img.jpg"></video>
+
+                  <button class="button-player">
+                     <img src="img/button-player.svg" alt="play-button">
+                  </button>
+
+                  <button class="button-icon">
+                     <img src="img/icon.svg" alt="icon" class="icon">
+                   </button>
+                  <img src="img/player.svg" alt="player" class="player">
+              </div>
+
+              <div class="side-video-container background-gradient-blue"> 
+                  <h3 class="title-after-video">Про наші плани на майбутнє розповідає засновниця Асоціації Ольга Дзюбан</h3>
+                  <p class="dscr-after-video">
+                      Асоціація втілює у життя культурні, освітні, гуманітарні проєкти, залучаючи кошти  меценатів та фондів, спираючись на підтримку небайдужих людей, створюючи коло однодумців.<br>
+                      Ми надихаємо на створення нових сучасних проєктів, які спрямовані на популяризацію та розвиток української культури та мистецтва. Звітуємо перед  членами та меценатами, залучаємо нових партнерів, маємо великі плани.<br>
+                      За сутністю асоціація «Джерело» е організацією парасолькового типу. 
+                   </p>
+                
+                    <div class="button-after-video">
+                      <button class="button-after-video-yellow">Підтримати</button>
+                      <button class="button-after-video-white">Звiти</button>
+                   </div>   
+               </div>
+          </div>
+         </div>
+        </section>
+
+        <section class="our-projects container">
+          <h2 class="our-projects-title">Нашi проекти</h2>
+          <div class="our-projects-container-for-links">
+            <div class="container-for-link-1-and-3">
+              <a href="#" class="our-projects-link-1">
+                <img src="img/photo-link-1.jpg" alt="photo" class="photo-link-bg-1">
+              </a>
+
+              <a href="#" class="our-projects-link-3">
+               <img src="img/photo-link-3.jpg" alt="photo" class="photo-link-bg-3">
+              </a>
+           </div>
+
+           <div class="container-for-link-2-and-4">
+              <a href="#" class="our-projects-link-2-yellow">
+                <img src="img/photo-link-2.jpg" alt="photo" class="photo-link-bg-2">
+              </a>
+
+              <a href="#" class="our-projects-link-4">
+                <img src="img/photo-link-4.jpg" alt="photo" class="photo-link-bg-4">
+              </a>
+           </div>
+
+           <div class="container-for-link-5-and-6">
+              <a href="#" class="our-projects-link-5">
+                <img src="img/photo-link-5.jpg" alt="photo" class="photo-link-bg-5">
+              </a>
+
+              <a href="#" class="our-projects-link-6-blue">
+                <img src="img/photo-link-6.jpg" alt="photo" class="photo-link-bg-6">
+              </a>
+            </div>
+              
+            <div class="container-for-link-7">
+              <a href="#" class="our-projects-link-7">
+                <img src="img/photo-link-7.jpg" alt="photo" class="photo-link-bg-7">
+              </a>
+            </div>
+          </div>
+
+          <div class="society-container">
+            <h3 class="society-title">Асоціація активно проводить такі заходи:</h3>
+            <ul class="society-list">
+              <li class="link-point"><a href="#">Фестиваль «Вишиванка як код нації» (Людмила Скитенко, «Академія успіху»)</a></li>
+              <li class="society-point">Допомога учасникам (пораненим) подій на Майдані (Революція гідності)</li>
+              <li class="society-point">Матеріальна та грошова допомога воїнам АТО та ЗСУ, пораненим у війні,  реабілітація в Барселоні</li>
+              <li class="society-point">Матеріальна допомога дітям-сиротам у дитячих будинках в Україні</li>
+              <li class="society-point">Вечорниці</li>
+              <li class="link-point"><a href="#">Зустрічі з сучасними українськими письменниками та презентації їх творів</a></li>
+              <li class="link-point"><a href="#">Фотовиставки та виставки картин українських художників</a></li>
+              <li class="link-point"><a href="#">Юридичні семінари за участю висококваліфікованих спеціалістів</a></li>
+              <li class="society-point">Концерти відомих українських співаків та танцювальних колективів</li>
+              <li class="society-point">участь у місцевих фестивалях міста Барселони (Merce, Festival «Sopas del Mundo»</li>
+            </ul>
+          </div>
+
+          <div class="container-for-blue-yellow">
+
+          <div class="society-container-blue">
+            <h4 class='membership-title'>Члени Асоціації можуть:</h4>
+              <ul class='membership-list'>
+                <li class="membership-point">Навчати  дітей у школі «Нове покоління»</li>
+                <li class="membership-point">Займатися на мовних курсах, користуватися бібліотекою</li>
+                <li class="membership-point">Відвідувати освітні заходи</li>
+                <li class="membership-point">Брати участь та організовувати культурні, мистецьки події</li>
+                <li class="membership-point">Отримувати юридичні консультації та допомогу, а також консультації психолога</li>
+              </ul>
+          </div>
+          <div class="society-container-yellow">
+            <p class="society-text">
+              Щоб стати членом асоціації треба мати бажання, зв’язатись із нами, пройти невеличку співбесіду, сплатити членські внески.  Можна заповнити форму прямо тут на сайті, ми зв’яжемось з вами. 
+            </p>
+            <p class="society-text">
+              Ласкаво просимо до нашої великої сім’ї, зараз в асоціації  понад 1000 членів.
+            </p>
+            <p class="society-bold-text">
+              Членський внесок 15 євро на рік.
+            </p>
+            <button class="society-button"><p class="society-button-text">Хочу бути членом Асоціації  «Джерело»</p></button>
+          </div>
+          </div>
+        </section>
+
+        <section class="key-partners container">
+          <div class="key-partners-div">
+            <h5 class="key-partners-title">Ключові партнери</h5>
+            <img src="img/partners.jpg" alt="photo" class="key-partners-photo-1">
+            <div class="button-div">
+             <button class="be-key-partners-button"><p class="be-key-partners-text-button">Стати нашим партнером</p></button>
+             <button class="list-key-partners-button" ><p class="list-key-partners-text-button">Повний перелiк партнерiв</p></button>
+           </div>
+        </div>
+        </section>
+
+        <section class="section-news container">
+            <h6 class="title-news">Новини</h6>
+          <div class="div-news">
+            <img src="img/news-photo-1.jpg" alt="photo" class="news-photo-1">
+              
+           <div class="div-news-text">
+             <h7 class="news-text-small-title">Арт-шоу «Вишиванка, як код нації»</h7>
+             <p class="news-data">
+               04.04.2022
+             </p>
+              <p class="news-sbcr">
+               «Вишиванка, як код нації» – святкове шоу української вишиванки, яке пройщло з великим розмахом
+              </p>
+              <a href="#" class="news-link">Детальнiше</a>
+            </div>
+
+            <img src="img/news-photo-2.jpg" alt="photo" class="news-photo-2">
+
+            <div class="div-news-text">
+             <h7 class="news-text-small-title">Благодійний концерт жертвам війни в Україні</h7>
+             <p class="news-data">04.04.2022</p>
+             <p class="news-sbcr">
+               28 березня 2022 року у церкві Santa Maria del Mar відбувся Благодійний концерт жертвам війни
+             </p>
+             <a href="#" class="news-link">Детальнiше</a>
+            </div>
+         </div>
+
+         <button class="news-button-look-more"><p class="news-button-look-more-text">Дивитись ще</p></button>
+       </section>
+
+       <section class="our-team container">
+        <div class="our-team-div"> 
+          <h8 class="our-team-title">Наша команда</h8>
+
+          <div class="team-container">
+           <div class="dscr-member-container">
+             <img src="img/member-photo-1.jpg" alt="photo" class="member-photo-1">
+             <div class="text-member-container">
+                <h9 class="name-of-member"> Lorem ipsum </h9>
+                <p class="dscr-member">
+                  Lorem ipsum dolor sit amet, consectet
+                </p>
+             </div>
+           </div>
+
+           <div class="dscr-member-container">
+             <img src="img/member-photo-2.jpg" alt="photo" class="member-photo-2">
+             <div class="text-member-container">
+                <h9 class="name-of-member"> Lorem ipsum </h9>
+                <p class="dscr-member">
+                 Lorem ipsum dolor sit amet, consectet
+                </p>
+              </div>
+            </div>
+             
+
+             <div class="dscr-member-container">
+               <img src="img/member-photo-3.jpg" alt="photo" class="member-photo-3">
+               <div class="text-member-container">
+                 <h9 class="name-of-member"> Lorem ipsum </h9>
+                 <p class="dscr-member">
+                   Lorem ipsum dolor sit amet, consectet
+                 </p>
+               </div>
+             </div>
+
+             <div class="dscr-member-container">
+               <img src="img/member-photo-4.jpg" alt="photo" class="member-photo-4">
+               <div class="text-member-container">
+                 <h9 class="name-of-member"> Lorem ipsum </h9>
+                 <p class="dscr-member">
+                    Lorem ipsum dolor sit amet, consectet
+                 </p>
+                </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+        <section class="contacts">
+          <div class="contacts-div">
+           <h10 class="contacts-title">Контакти</h10>
+           <div class="contacts-2">
+           <div class="contacts-text">
+           <p class="contacts-dscr">
+             Слідкуйте за сторінкою Асоціації у фейсбуці. Ми пишемо про події, які були і які плануємо, анонси, інформуємо про зміни у законодавстві, запрошуємо на курси, розповідаємо про цікаве.
+           </p>
+         
+           <div class="icon-container">
+             <img src="img/icon-facebok.svg" alt="photo" class="icon-facebok">
+             <img src="img/icon-instagram.svg" alt="photo" class="icon-instagram">
+             <img src="img/icon-telegram.svg" alt="photo" class="icon-telegram">
+             <img src="img/icon-youtube.svg" alt="photo" class="icon-youtube">
+           </div>
+           
+           <p class="contacts-dscr-address">
+             Нас можна знайти за адресою Carrer de Béjar, 38
+           </p>
+
+            <p class="contacts-dscr-address">
+             автобус D40, V5, 27 
+           </p>
+
+            <p class="contacts-dscr-address">
+             метро L5 Sants Estació або L3 Espanya
+           </p>
+
+           <p class="contacts-dscr-welcome">
+             Ласкаво просимо!
+           </p>
+
+            <div class="container-for-email-tel">
+              <img src="img/icon-email.svg" alt="photo" class="icon-email">
+              <p class="dscr-email">
+                asociacion@djerelo.eu
+             </p>
+             <img src="img/icon-tel.svg" alt="photo" class="icon-tel">
+             <p class="dscr-tel">
+               +34 641 35 22 51
+             </p>
+           </div>
+           </div>
+ 
+            <div class="map-container">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5182.423445792781!2d2.140058591294698!3d41.37922332413356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zIENhcnJlciBkZSBCw6lqYXIsIDM4INCw0LLRgtC-0LHRg9GBIEQ0MCwgVjUsIDI3ICDQvNC10YLRgNC-IEw1IFNhbnRzIEVzdGFjacOzINCw0LHQviBMMyBFc3Bhbnlh!5e0!3m2!1sru!2sua!4v1763423749980!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-container"></iframe>
+           </div>
+          </div>
+         </div>
+       </section>
+   </main>
+   
+
+    <footer class="container">
+      <div class="div-footer">
+        <img src="img/icon-footer.svg" alt="photo" class="icon-footer">
+        <div class="container-links">
+          <ul class="links-for-footer">
+            <li><a href="#" class="links-footer">Наші партнери</a></li>
+            <li><a href="#" class="links-footer">Звіти</a></li>
+            <li><a href="#" class="links-footer">Новини</a></li>
+            <li><a href="#" class="links-footer">Контакти</a></li>
+            <li><a href="#" class="links-footer">Український центр у Барселоні </a></li>
+            <li><a href="#" class="links-footer">Школа та садочок</a></li>
+          </ul>
+          <ul class="links-for-footer">
+            <li><a href="#" class="links-footer">Гуманітарний центр</a></li>
+            <li><a href="#" class="links-footer">Бібліотека</a></li>
+            <li><a href="#" class="links-footer">Український сад </a></li>
+            <li><a href="#" class="links-footer">Фестиваль</a></li>
+            <li><a href="#" class="links-footer">Вебсайт допомоги біженцям з України</a></li>
+          </ul>
+        </div>
+
+        <div class="container-footer-list">
+          <ul class="list-in-footer">
+            <li class="list-footer-1">© Djerelo.eu. 2022 Усі права захищено.</li>
+            <li class="grey-list-footer">Розробка <a href="#" class="links-footer-2">Colin Drury</a></li> 
+          </ul>
+          <ul class="list-in-footer">
+            <li class="grey-list-footer">Дизайн <a href="#" class="links-footer-2">Clickable agenсy</a></li>
+            <li class="grey-list-footer">Маркетинг, Google Grants</li>
+            <li><a href="#" class="links-footer-2"></a></li>
+            <li><a href="#" class="links-footer-2">Inweb.ua</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
